@@ -1,0 +1,138 @@
+section {
+    margin-top: 200vh;
+    margin-bottom: 200vh;
+    min-height: 576px;
+    height: auto;
+    width: 80%;
+    max-width: 1440px;
+    justify-content: center;
+    display: flex;
+}
+
+.half {
+    width: 49%;
+    display: inline-block;
+}
+
+img {
+    background-image: url('picture.webm');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+text-align: center;}
+
+.color {
+    background-color: rgba(227, 207, 207, 1);
+    padding: 120px 104px 20px 104px;
+}
+
+.btn {
+    padding: 17px 49px;
+    background-color: rgba(227, 207, 207, 1);
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.container {
+height: 576px;
+object-fit: contain;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+p, h1 {
+    animation: Scroll ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+@keyframes Scroll {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .color {
+        width: 100%;
+        padding: 62px 0px 62px 0px;
+        margin: 0px;
+    }
+    .half {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    .container {
+        height: auto;
+        object-fit: contain;
+        }
+}
+
+
+@media only screen and (max-width: 375px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .color {
+        width: 100%;
+        padding: 62px 0px 62px 0px;
+        margin: 0px;
+    }
+    .half {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    .container {
+        height: auto;
+        object-fit: contain;
+        }
+}
